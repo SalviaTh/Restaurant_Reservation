@@ -22,7 +22,7 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <button className="menuBtn">Change mode</button>
+          {/* <button className="menuBtn">Change mode</button> */}
           <button className="menuBtn">OUR MENU</button>
         </div>
         <div className="hamburger" onClick={()=> setShow(!show)}>
