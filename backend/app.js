@@ -20,13 +20,18 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(async (req, res, next) => {
+  await dbConnection();
+  next();
+});
+
 app.use("/api/v1/reservation", reservationRouter);
 app.get("/", (req, res, next)=>{return res.status(200).json({
   success: true,
   message: "HELLO WORLD AGAIN"
 })})
 
-dbConnection();
+// database connection executes in middleware now
 
 app.use(errorMiddleware);
 
