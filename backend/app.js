@@ -8,9 +8,11 @@ import { dbConnection } from "./database/dbConnection.js";
 const app = express();
 dotenv.config({ path: "./config.env" });
 
+const frontendUrl = process.env.FRONTEND_URL ? process.env.FRONTEND_URL.replace(/\/$/, "") : "";
+
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: [frontendUrl],
     methods: ["POST"],
     credentials: true,
   })
