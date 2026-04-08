@@ -17,8 +17,9 @@ const Reservation = () => {
   const handleReservation = async (e) => {
     e.preventDefault();
     try {
+      const baseUrl = (import.meta.env.VITE_BACKEND_URL || "http://localhost:4000").replace(/\/$/, "");
       const { data } = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL || "http://localhost:4000"}/api/v1/reservation/send`,
+        `${baseUrl}/api/v1/reservation/send`,
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
