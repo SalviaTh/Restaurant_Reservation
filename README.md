@@ -1,6 +1,8 @@
 # Restaurant Reservation System
 
 A full-stack (MERN) web application for making and managing restaurant reservations. It features a clean React frontend using Vite and a robust Express/Node.js backend with MongoDB integration.
+# Restaurant Reservation System
+Live Site: https://restaurant-reservation-salvia.vercel.app/
 
 ## Technologies Used
 - **Frontend:** React.js, Vite, Axios, React Hot Toast
