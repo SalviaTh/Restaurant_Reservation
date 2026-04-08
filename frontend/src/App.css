@@ -970,6 +970,7 @@ footer .container .banner .right {
   width: 550px;
 }
 .reservation .container .banner .reservation_form_box form button {
+  cursor: pointer;
   border: 1px solid black;
   padding: 8px 36px;
   border-radius: 30px;
