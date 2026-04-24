@@ -29,12 +29,12 @@
 * {
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s, color 0.3s;
@@ -261,7 +261,7 @@ nav svg {
 }
 
 .heroSection .container .banner .title {
-  font-size: 8.5rem;
+  font-size: 7.8rem;
   font-weight: 200;
 }
 
@@ -450,6 +450,7 @@ nav svg {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left: 5rem;
 }
 
 .about .container .banner img {
@@ -1079,7 +1080,7 @@ footer .container .banner .right {
 }
 
 .reservation .container .banner .reservation_form_box {
-  width: 400px;
+  width: 480px;
   background: var(--bg-primary);
   height: 100%;
   padding: 20px;
