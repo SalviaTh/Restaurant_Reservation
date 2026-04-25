@@ -1333,3 +1333,214 @@ footer .container .banner .right {
 }
 
 /**********************************************************************************************************************/
+
+/* MENU PAGE STYLING */
+/*********************************************************************************************************************/
+
+.menuPage {
+  min-height: 100vh;
+}
+
+.menuPage_hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(135deg, rgba(152, 87, 191, 0.15), rgba(255, 150, 100, 0.1));
+}
+
+[data-theme="dark"] .menuPage_hero {
+  background: linear-gradient(135deg, rgba(152, 87, 191, 0.25), rgba(80, 40, 100, 0.2));
+}
+
+.menuPage_hero h1 {
+  margin-bottom: 12px;
+}
+
+.menuPage_hero p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+.menuPage_content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.menuPage_filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.filter_btn {
+  padding: 10px 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter_btn:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+
+.filter_btn.active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.menuPage_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menuPage_card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--nav-border);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menuPage_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .menuPage_card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.menuPage_card_img {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.menuPage_card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.menuPage_card:hover .menuPage_card_img img {
+  transform: scale(1.08);
+}
+
+.menuPage_badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 18px;
+  background: linear-gradient(186deg, #000, #444);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.menuPage_card_body {
+  padding: 20px;
+}
+
+.menuPage_card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menuPage_card_header h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.menuPage_price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(152, 87, 191);
+}
+
+[data-theme="dark"] .menuPage_price {
+  color: #bb86fc;
+}
+
+.menuPage_card_body p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.menuPage_back {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.menuPage_back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-color);
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--text-primary);
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.menuPage_back a:hover {
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+
+@media (max-width: 1000px) {
+  .menuPage_card_img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menuPage_grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .menuPage_hero h1 {
+    font-size: 3rem;
+  }
+
+  .menuPage_card_img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menuPage_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter_btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
+/*********************************************************************************************************************/

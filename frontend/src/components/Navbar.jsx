@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { data } from "../restApi.json";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useTheme } from "../context/ThemeContext";
@@ -12,11 +13,11 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="logo">ZEESH</div>
+        <div className="logo">FOODIE</div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
             {data[0].navbarLinks.map((element) => (
-              <Link
+              <ScrollLink
                 to={element.link}
                 spy={true}
                 smooth={true}
@@ -24,13 +25,13 @@ const Navbar = () => {
                 key={element.id}
               >
                 {element.title}
-              </Link>
+              </ScrollLink>
             ))}
           </div>
           <button className="theme-toggle-btn" onClick={toggleTheme}>
             {theme === "light" ? <MdDarkMode /> : <MdLightMode />}
           </button>
-          <button className="menuBtn">OUR MENU</button>
+          <RouterLink to="/menu" className="menuBtn">OUR MENU</RouterLink>
         </div>
         <div className="hamburger" onClick={() => setShow(!show)}>
           <GiHamburgerMenu />

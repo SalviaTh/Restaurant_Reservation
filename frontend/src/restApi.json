@@ -25,49 +25,65 @@
                 "id": 1,
                 "image": "./dinner1.jpeg",
                 "title": "ROASTED LAMB RUMP",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price": "$32",
+                "description": "Tender lamb rump roasted to perfection, served with seasonal vegetables and a rich rosemary jus."
             },
             {
                 "id": 2,
                 "image": "./dinner2.png",
                 "title": "CITRUS CURED SALMON",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price": "$28",
+                "description": "Fresh Atlantic salmon cured in a citrus blend, paired with microgreens and a tangy vinaigrette."
             },
             {
                 "id": 3,
                 "image": "./breakfast1.png",
                 "title": "PAN SEARED SEA BASS",
-                "category": "Breakfast"
+                "category": "Breakfast",
+                "price": "$24",
+                "description": "Crispy-skinned sea bass served on a bed of sautéed greens with a lemon butter sauce."
             },
             {
                 "id": 4,
                 "image": "./dinner3.png",
                 "title": "STUFFED STRAWBERRY",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price": "$18",
+                "description": "Fresh strawberries filled with a sweet mascarpone cream and drizzled with dark chocolate."
             },
             {
                 "id": 5,
                 "image": "./lunch1.png",
                 "title": "BEEF BURGER MEAL",
-                "category": "Lunch"
+                "category": "Lunch",
+                "price": "$22",
+                "description": "Juicy Angus beef patty with caramelized onions, smoked cheddar, and house-made brioche bun."
             },
             {
                 "id": 6,
                 "image": "./dinner4.png",
                 "title": "MUSSELS SOUP",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price": "$26",
+                "description": "Steamed mussels in a fragrant white wine broth with garlic, shallots, and fresh herbs."
             },
             {
                 "id": 7,
                 "image": "./dinner5.png",
                 "title": "ITALIAN SPAGHETTI",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price": "$20",
+                "description": "Al dente spaghetti tossed with a slow-cooked Bolognese sauce and topped with Parmigiano-Reggiano."
             },
             {
                 "id": 8,
                 "image": "./dinner6.png",
                 "title": "GRILLED FISH",
-                "category": "Dinner"
+                "category": "Dinner",
+                "price": "$30",
+                "description": "Char-grilled whole fish marinated in Mediterranean spices, served with roasted potatoes."
             }
         ],
         "team": [
